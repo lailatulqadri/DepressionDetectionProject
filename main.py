@@ -1,17 +1,4 @@
 import streamlit as st
-import pandas as pd
-
-from empath import Empath
-lexicon = Empath()
-
-from LeXmo import LeXmo
-
-from nltk.tokenize import word_tokenize
-
-import string
-
-import contractions
-
 
 #list - important text features for depression identification:
 # 1) absolute words - source: https://speakai.co/absolutist-words/
