@@ -1,6 +1,1 @@
 streamlit
-pandas
-empath
-LeXmo
-nltk
-contractions
