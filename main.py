@@ -108,8 +108,8 @@ def predict_text(input_text):
     #classification
     predicted_labels_knn = modelknn.predict(Test)
   
-
-    return true_test_labels[np.int(predicted_labels_knn[0])] 
+    output = "\n",test_sentences[0],":",true_test_labels[np.int(predicted_labels_knn[0])]
+    return output
 
 
 if analyse_button:
