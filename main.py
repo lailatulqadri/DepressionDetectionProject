@@ -111,7 +111,7 @@ def predict_text(input_text):
     output = true_test_labels[np.int(predicted_labels_knn[0])]
 
     st.write ("\n",test_sentences[0],":",true_test_labels[np.int(predicted_labels_knn[0])],\
-"\n",test_sentences[1],":",true_test_labels[np.int(predicted_labels_knn[1])]))
+"\n",test_sentences[1],":",true_test_labels[np.int(predicted_labels_knn[1])])
 
     return output
 
