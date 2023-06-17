@@ -109,12 +109,16 @@ def predict_text(input_text):
     predicted_labels_knn = modelknn.predict(Test)
   
     output = true_test_labels[np.int(predicted_labels_knn[0])]
+
+    st.write ("\nBelow 3 sentences will be predicted against the learned nieghbourhood and learned clusters:\n1. ",\ test_sentences[0],"\n2. ",test_sentences[1],"\n3. ")
+
     return output
 
 
 if analyse_button:
   st.write("i got you!")
-  st.write(predict_text(input_text))
+  predict_text(input_text)
+  st.write("test")
 
           
 
