@@ -107,8 +107,7 @@ def predict_text(input_text):
     true_test_labels = ['non-depressed','depressed']
     #classification
     predicted_labels_knn = modelknn.predict(Test)
-    #clustering
-    predicted_labels_kmeans = modelkmeans.predict(Test)
+  
 
     return true_test_labels[np.int(predicted_labels_knn[0])] 
 
