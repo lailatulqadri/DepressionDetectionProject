@@ -110,8 +110,7 @@ def predict_text(input_text):
   
     output = true_test_labels[predicted_labels_knn[0]]
 
-    st.write ("\n",test_sentences[0],":",true_test_labels[predicted_labels_knn[0]],\
-"\n",test_sentences[1],":",true_test_labels[predicted_labels_knn[1]])
+    st.write ("\n",test_sentences[0],":",true_test_labels[predicted_labels_knn[0]])
 
     return output
 
