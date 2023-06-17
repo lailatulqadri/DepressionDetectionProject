@@ -93,9 +93,9 @@ def predict_text(input_text):
     #This is to test the trained model. It is tested using 3 text sentences.
 
     # Predicting it on test data : Testing Phase
-    test_sentences = ["""I feel so sad because i can't be happy, and that makes me more unhappy  """, """I went to church with my mom and a huge chunk of the sermon was basically if youre  its because your faith is weak and . this is why I dont go to church or tell my mom Im on antidepressants ?"""]
+    test_sentences = [input_text]
 
-    test_clean_sentence = [input_text]
+    test_clean_sentence = []
     for test in test_sentences:
       cleaned_test = clean(test)
       cleaned = ' '.join(cleaned_test)
