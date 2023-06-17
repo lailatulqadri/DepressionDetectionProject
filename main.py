@@ -114,7 +114,7 @@ def predict_text(input_text):
 
 if analyse_button:
   st.write("i got you!")
-  print(predict_text(input_text))
+  st.write(predict_text(input_text))
 
           
 
