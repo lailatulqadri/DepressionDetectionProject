@@ -108,7 +108,7 @@ def predict_text(input_text):
     #classification
     predicted_labels_knn = modelknn.predict(Test)
   
-    output = predicted_labels_knn
+    output = true_test_labels[np.int(predicted_labels_knn[0])]
     return output
 
 
