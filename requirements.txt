@@ -1,2 +1,8 @@
 streamlit
 contractions
+pandas
+numpy
+empath
+LeXmo
+nltk
+sklearn
