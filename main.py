@@ -3,7 +3,7 @@ import streamlit as st
 import json
 import contractions
 
-st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
+st.title("Depression Identification")
 
 
 
