@@ -19,6 +19,7 @@ nltk.download('wordnet')
 
 # Importing libraries
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import KMeans
 from nltk.corpus import stopwords
@@ -72,7 +73,8 @@ def predict_text(input_text):
 
     #"""Text representation by using TFIDF"""
 
-    vectorizer = TfidfVectorizer(stop_words='english')
+    #vectorizer = TfidfVectorizer(stop_words='english')
+    vectorizer = CountVectorizer(stop_words='english')
     X = vectorizer.fit_transform(train_clean_sentences)
 
     #"""Let's split the data into training our model. For easy understanding, we will label our dataset to 0, 1 & 2."""
