@@ -88,7 +88,7 @@ def predict_text(input_text):
 
 
     # Classification the document with KNN classifier
-    modelknn = KNeighborsClassifier(n_neighbors=5)
+    modelknn = KNeighborsClassifier(n_neighbors=1)
     modelknn.fit(X,y_train)
 
     #"""Testing on Unseen Texts.
