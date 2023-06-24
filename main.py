@@ -18,7 +18,7 @@ nltk.download('wordnet')
 #We use sklearn library for machine learning based analysis. Sklearn support many machine learning approaches such as SVM, nearest neighbour, random forest, k-means and many more. You can find more information about sklearn in this webpage: https://scikit-learn.org/stable/
 
 # Importing libraries
-from sklearn.feature_extraction.text import TfidfVectorizer
+#from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import KMeans
@@ -88,7 +88,7 @@ def predict_text(input_text):
 
 
     # Classification the document with KNN classifier
-    modelknn = KNeighborsClassifier(n_neighbors=1)
+    modelknn = KNeighborsClassifier(n_neighbors=5)
     modelknn.fit(X,y_train)
 
     #"""Testing on Unseen Texts.
